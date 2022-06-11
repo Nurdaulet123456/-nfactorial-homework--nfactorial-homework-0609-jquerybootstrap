@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin 0;
+  background-color: white;
+  color: black;
+  font-size: 1.6rem;
+
+  line-height: 1.2;
+}
+
+h1,h2,h3,h4,h5,h6, p {
+  margin: 0
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  width: 100%;
+  border: 1px solid black;
+}
+
+.header__inner {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+
+.nav__link {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
+  margin-right: 50px;
+}
+
+.nav__link::after {
+  content: "";
+  display: block;
+
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  transition: all .2s linear;
+}
+
+.nav__link:hover::after {
+  width: 100%;
+}
+
+.main {
+  margin-top: 100px;
+}
+
+.main_inner {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+button[type="button"] {
+  display: inline-block;
+  margin-top: 30px;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+
+/* REuslt */
+
+
+.result {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#errmsg{
+  margin-top:4px;
+  background: #ff5757;
+  color:#fff;
+  padding:4px;
+  display:none;
+  width: 250px;
+}
+
+.result {
+  opacity: 0;
+}
